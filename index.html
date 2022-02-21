@@ -5,14 +5,36 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+		<title>Rock Paper Scissors!</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		
+		<img src="img/playagame.gif">
+		<h1>Rock Paper Scissors!</h1>
+		<h2>What will you decide?</h2>
+		<section class="choices">
+			<button id="rock" value="rock">Rock</button>
+			<button id="paper" value="paper">Paper</button>
+			<button id="scissors" value="scissors">Scissors</button>
+		</section>
+		<section class="scores">
+			<section>
+				<p>Player Score</p>
+				<p id="playerScore"></p>
+			</section>
+			<section>
+				<p>Computer Score</p>
+				<p id="computerScore"></p>
+			</section>
+		</section>
+		<section class="bot">
+			<h3>Results</h3>
+			<p id="results"></p>
+		</section>
+		<input type="button" value="Play Again!">
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
