@@ -19,6 +19,8 @@
 body {
   background-color: black;
   color: #f7022a;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .choices {
   display: flex;
@@ -75,13 +77,51 @@ button:disabled {
 
 input {
   width: 300px;
+  margin-bottom: 10px;
 }
 
 @media all and (max-width:600px) {
   img {
-    width: 430px;
+    width: 350px;
   }
-}
+
+  * {
+    font-size: larger;
+  }
+  #playerScore, #computerScore {
+    border: 3px solid #f7022a;
+    height: 100px;
+    width: 150px;
+    font-size: 50px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  #results {
+    margin: 15px auto;
+    width: auto;
+  }
+
+  h3 {
+    margin: 5px auto;
+  }
+
+  h1, h2 {
+    margin: 17px auto;
+  }
+
+  .mobile {
+    font-size: 30px;
+  }
+
+  .jig {
+    height: 41.4px;
+  }
+
+  .scores, .choices {
+    gap: 20px;
+  }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
