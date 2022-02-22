@@ -78,7 +78,7 @@ function game () {
         document.querySelector('#scissors').disabled = true
         document.querySelector('#results').innerHTML = `Congratulations ${playerName} have beat the game! Click "Play Again" to give it another shot!`
     } else if (computerScore === 5) {
-        document.querySelector('#results').innerHTML = `Oh NO! ${playerName} lost the game Jigsaw! Click "Play Again" to give it another shot!`
+        document.querySelector('#results').innerHTML = `Oh NO! ${playerName} lost the game to Jigsaw! Click "Play Again" to give it another shot!`
         document.querySelector('#rock').disabled = true
         document.querySelector('#paper').disabled = true
         document.querySelector('#scissors').disabled = true
