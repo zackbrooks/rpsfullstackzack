@@ -2,12 +2,16 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
+    	<meta name="description" content="Jigsaw/Saw themed Rock, Paper, Scissors game.">
+    	<meta name="keywords" content="Jigsaw, Rock, Paper, Scissors, Saw">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Rock Paper Scissors!</title>
+		<title>Jigsaw: Rock Paper Scissors</title>
 
 		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -22,17 +26,18 @@
 		</section>
 		<section class="scores">
 			<section>
-				<p>Player Score</p>
-				<p id="playerScore"></p>
+				<p><span id="user">Player</span>'s Score</p>
+				<p id="playerScore">0</p>
 			</section>
 			<section>
-				<p>Computer Score</p>
-				<p id="computerScore"></p>
+				<p>Jigsaw's Score</p>
+				<p id="computerScore">0</p>
 			</section>
 		</section>
+		<h3>First one to 5 points wins the game!</h3>
 		<section class="bot">
-			<h3>Results</h3>
-			<p id="results"></p>
+			<h3 class="scoreText">Results</h3>
+			<p id="results">Select an option above to start the game. Good luck!</p>
 		</section>
 		<input type="button" id="reset" value="Play Again!">
 
